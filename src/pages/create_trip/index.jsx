@@ -22,6 +22,7 @@ import { useGoogleLogin } from "@react-oauth/google";
 import { setDoc,doc } from "firebase/firestore";
 import { db } from "../../Service/firebaseConfig";
 import { useNavigate } from "react-router-dom";
+import Header from "@/components/custom/Header";
 
 const Createtrip = () => {
   const [place, setPlace] = React.useState([]);
@@ -120,6 +121,9 @@ const Createtrip = () => {
   };
 
   return (
+    <div>
+      <Header/>
+    
     <div className="sm:px-10 md:px-32 lg:px-56 xl:px-72 px-5 mt-10">
       <h2 className="font-bold text-3xl">Tell us your travel preferences 🏕️</h2>
       <p className="text-xl text-gray-500 mt-3">
@@ -216,6 +220,7 @@ const Createtrip = () => {
           </DialogHeader>
         </DialogContent>
       </Dialog>
+    </div>
     </div>
   );
 };

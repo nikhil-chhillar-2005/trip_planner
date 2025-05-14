@@ -2,6 +2,7 @@ import { db } from '@/src/Service/firebaseConfig';
 import { collection, query, where, getDocs } from 'firebase/firestore';
 import React, { useEffect, useState } from 'react';
 import UserTripcard from './userTripcard';
+import Header from '@/components/custom/Header';
 
 function Mytrips() {
   const [usertrips, setUserTrips] = useState([]);
@@ -55,6 +56,9 @@ function Mytrips() {
   };
 
   return (
+    <div>
+      <Header/>
+    
     <div className="sm:px-10 md:px-32 lg:px-56 xl:px-72 px-5 mt-10">
       <h2 className="font-bold text-3xl text-center">My Trips</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mt-10">
@@ -69,6 +73,7 @@ function Mytrips() {
               ></div>
             ))}
       </div>
+    </div>
     </div>
   );
 }

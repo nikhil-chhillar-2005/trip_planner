@@ -6,6 +6,7 @@ import InfoSection from './componen/InfoSection';
 import Hotels from './componen/Hotels';
 import PlacesToVisit from './componen/PlacesToVisit';
 import Footer from './componen/Footer';
+import Header from '@/components/custom/Header';
 const ViewTrip = () => {
 
     const [trip, settrip] = React.useState([]);
@@ -30,6 +31,9 @@ const ViewTrip = () => {
     }
 
   return (
+    <div>
+        <Header/>
+    
     <div className='p-10 md:px-20 lg:px-44 xl:px-56 '>
         {/* Information */}
 
@@ -44,6 +48,7 @@ const ViewTrip = () => {
 
         {/* footer */}
         <Footer />
+    </div>
     </div>
   )
 }

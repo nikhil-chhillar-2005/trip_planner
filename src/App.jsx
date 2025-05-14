@@ -1,7 +1,6 @@
 
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
 import Home from "./pages/Home"
-import Header from "@/components/custom/Header"
 import { Toaster } from "react-hot-toast"
 import Createtrip from "./pages/create_trip"
 import { GoogleOAuthProvider } from "@react-oauth/google"
@@ -11,7 +10,7 @@ function App() {
   return (
     <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_AUTH_CLIENT_ID}>  
        <Router>
-       <Header/>
+       
     <Routes>
        <Route path="/" element={<Home/>} />
        <Route path="/create-trip" element={<Createtrip/>} />
