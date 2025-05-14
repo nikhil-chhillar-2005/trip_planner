@@ -63,7 +63,7 @@ const Header = () => {
 
   return (
     <div className='p-2 shadow-sm flex items-center justify-between'>
-       <Link to={'/'}> <img src="/logo.svg" alt="logo" className='h-15' /></Link>
+       <Link to={'/'}> <img src="/logo.svg" alt="logo" className='h-10 lg:h-15' /></Link>
         <div>
           {
             user?<div className='flex items-center gap-5 pr-5'>
