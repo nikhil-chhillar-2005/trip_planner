@@ -67,8 +67,8 @@ const Header = () => {
         <div>
           {
             user?<div className='flex items-center gap-5 pr-5'>
-              <Link to={'/create-trip'}><Button variant="outline" className='cursor-pointer rounded-full'> +Create Trip</Button></Link>
-              <Link to={'/my-trips'}><Button variant="outline" className='cursor-pointer rounded-full'>My Trips</Button></Link>
+              <Link to={'/create-trip'}><Button variant="outline" className='cursor-pointer tex-xs lg:text-xl rounded-full'> +Create Trip</Button></Link>
+              <Link to={'/my-trips'}><Button variant="outline" className='cursor-pointer tex-xs lg:text-xl rounded-full'>My Trips</Button></Link>
               <Popover>
               <PopoverTrigger><img  src={userpic} className='h-[50px] w-[50px] rounded-full cursor-pointer' alt="" /></PopoverTrigger>
   <PopoverContent><h1 onClick={()=>{
