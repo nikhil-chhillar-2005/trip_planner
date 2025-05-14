@@ -66,7 +66,7 @@ const Header = () => {
        <Link to={'/'}> <img src="/logo.svg" alt="logo" className='h-10 lg:h-15' /></Link>
         <div>
           {
-            user?<div className='flex items-center gap-2 lg:gap-5 pr-5'>
+            user?<div className='flex items-center gap-1 lg:gap-5 pr-2 lg:pr-5'>
               <Link to={'/create-trip'}><Button variant="outline" className='cursor-pointer tex-xs lg:text-xl rounded-full'> +Create Trip</Button></Link>
               <Link to={'/my-trips'}><Button variant="outline" className='cursor-pointer tex-xs lg:text-xl rounded-full'>My Trips</Button></Link>
               <Popover>
