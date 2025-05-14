@@ -78,7 +78,7 @@ const Header = () => {
   }} className='cursor-pointer'>logout</h1></PopoverContent>
 </Popover>
 
-            </div>:<Button onClick={()=>{
+            </div>:<Button className={'cursor-pointer'} onClick={()=>{
               setdialog(true);
             }} >Sign In</Button>
           }
